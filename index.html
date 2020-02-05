@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dr Patrick Goold is an expert in intellectual property law, private law, and legal theory. He researches the history and philosophy of intellectual property law."/>
+    <link rel = "stylesheet" href = "css/menu.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Patrick Goold</title>
+    <script src="https://kit.fontawesome.com/15e2fd0502.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <header class = "header">
+        <!--Site title/brand-->
+        <div class = "header-wrap ">
+            <div class = "site-title">
+                <h1><a id = "brand" href = "index.html">Patrick Goold</a></h1>
+            </div>
+            <nav class = "wide-screen-nav">
+                <ul id = "menu" class = "hidden visible">
+                    <li class = "menu-item"><a class = "link" href = "about.html">About</a></li>
+                    <li class = "menu-item"><a class = "link" href = "publications.html">Publications</a></li>
+                    <li class = "menu-item"><a class = "link" href = "talks.html">Talks</a></li>
+                    <li class = "menu-item"><a class = "link" href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-----HAMBURGER ICON-->
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        <!------TOGGLE MOBILE MENU----->
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="talks.html">Talks</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <section class = "section-intro main-pg">
+        <div class = "content-container">
+            <div id = "img-container">
+                <img src = "img/patrick-goold-200px.jpg" alt = "Photo of Patrick Goold">
+            </div>
+            <p id ="intro" class = "center"><strong>Dr Patrick Goold is an expert in intellectual property law, private law, and legal theory.
+            He researches the history and philosophy of intellectual property law.</strong></p>
+            <div class = "social-media-links center">
+                <a href = "https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href = "https://uk.linkedin.com/in/patrick-r-goold-05462a42" target = "_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href = "mailto:patrick.goold@city.ac.uk"><i class="far fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class = "footer">
+        <div class="content-container inner-content"><p>Copyright &copy 2020 | Patrick Goold</p></div>
+    </footer>
+    </div>
+    <script>
+        $('#toggle').click(function() {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+</body>
+</html>

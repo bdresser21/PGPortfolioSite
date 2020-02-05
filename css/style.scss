@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+$color-main: #4ec973;
+$text-color: #303030 ;
+
+.main-pg, 
+.main-content {
+    height: 100% ;
+    padding-bottom: 20px ;
+}
+.content-container{
+    margin: auto;
+    width: 90% ;
+    /**TEST COLOR
+    background-color: pink ;**/
+    max-width: 769px ;
+    text-align: center ;
+    font-family: 'Roboto', sans-serif;
+
+    p {
+        margin: 30px;
+        text-align: left ;
+        line-height: 1.5;
+        /**TEST COLOR
+        background-color: aquamarine ;**/   
+    }
+
+    h4 {
+        color: $text-color ;
+        border-bottom: $color-main solid 4px ;
+        display: inline-block ;
+        font-size: 18px ;
+        padding-top: 40px;
+        text-transform: uppercase ; 
+    }
+
+    #dividing-line{
+        border-bottom: solid lightgray 1px ;
+        border-top-width: 100%;
+        display: block ;
+        padding-top: 40px ;
+        
+        margin: 0 ;
+    }
+
+    a {
+        color: black ;
+        &:hover {
+            color: $color-main ;
+        }
+    }
+}
+
+
+.section-intro {
+    
+    img {
+        height: 175px;
+        width: 175px ;
+        margin: 50px auto 30px auto ;
+        display: block ;
+        border-radius: 100px;
+        position: relative;
+        z-index: -1 ;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%) contrast(120%);
+        
+    }
+    
+    p#intro {
+        color: $text-color ;  
+        font-size: 18px ; 
+        line-height: 1.5;
+        text-align: center ;
+        text-decoration: underline ;
+        text-decoration-thickness: auto;
+        text-decoration-color: $color-main;
+        
+    }
+
+    div.social-media-links {
+        /**TEST COLOR
+        background-color: aquamarine ;**/
+        margin: auto;
+        
+        i.fab, i.far {
+        
+            margin: 0 10px 0 10px;
+            padding: 10px ; 
+            color: $color-main ;
+        }
+        
+        .fa-twitter, .fa-linkedin-in , .fa-envelope {
+            &:hover {
+            color: #4ec973b6 ;
+            }
+        }
+    }
+    
+    
+}
+
+
+.section-contact,
+.section-talks {
+    p {
+        text-align: center ;
+    }
+}
+
+.section-talks {
+    p {
+        &:first-line {
+            text-decoration: underline $color-main ;
+        }
+    }
+}
+.footer {
+    width: 100% ;
+    height: 75px ;
+    margin-bottom: 0 ;
+    bottom: 0 ;
+    z-index: -1 ;
+    display: block ;
+
+    div.inner-content {
+        font-size: 14px ;
+        display: flex ; 
+        flex-direction: column ;
+        align-items: center ;
+        justify-content: center;
+        
+    }
+    
+}
